@@ -1,0 +1,21 @@
+.hero-text {
+    color: #fffce1;
+}
+
+.intro-text {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+.announcements {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.hero-schedule {
+    padding: 0px;
+}
