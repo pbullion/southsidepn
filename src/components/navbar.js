@@ -12,6 +12,12 @@ class NavBar extends Component {
       items: [
         {
           id: 'visitor-nav-item',
+          name: 'Home',
+          glyph: 'list',
+          callback: this.goToHome
+        },
+        {
+          id: 'visitor-nav-item',
           name: 'Visitor Info',
           glyph: 'list',
           callback: this.goToVisitors
@@ -26,13 +32,7 @@ class NavBar extends Component {
           id: 'calendar-nav-item',
           name: 'Calendar',
           glyph: 'list',
-          callback: this.goToClients
-        },
-        {
-          id: 'online-bible-nav-item',
-          name: 'Online Bible',
-          glyph: 'list',
-          callback: this.goToClients
+          callback: this.goToCalendar
         },
         {
           id: 'we-believe-nav-item',
@@ -41,16 +41,16 @@ class NavBar extends Component {
           callback: this.goToWeBelieve
         },
         {
-          id: 'contact-us-nav-item',
-          name: 'Clients',
+          id: 'we-believe-nav-item',
+          name: 'Contact Us',
           glyph: 'list',
-          callback: this.goToClients
+          callback: this.goToContact
         },
         {
           id: 'our-staff-nav-item',
           name: 'Our Staff',
           glyph: 'list',
-          callback: this.goToClients
+          callback: this.goToStaff
         },
         {
           id: 'photo-gallery-nav-item',
@@ -82,6 +82,22 @@ class NavBar extends Component {
 
   goToWeBelieve() {
     hashHistory.push('/webelieve');
+  }
+
+  goToHome() {
+    hashHistory.push('/');
+  }
+
+  goToContact() {
+    hashHistory.push('/contact');
+  }
+
+  goToStaff() {
+    hashHistory.push('/staff');
+  }
+
+  goToCalendar() {
+    hashHistory.push('/calendar');
   }
 
   render() {

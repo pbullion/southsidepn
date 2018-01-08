@@ -20,7 +20,7 @@ class LandingPage extends Component {
                 <div className="hero-text">
                     <LazyHero imageSrc={church_pic} color="#7caeff" opacity="0.4">
                         <div className="container">
-                            <div className="col-xs-6">
+                            <div className="col-xs-12 col-md-6">
                                 <h2>Sundays</h2>
                                 <div className="col-xs-8 hero-schedule">
                                     <h4>Coffee & Fellowship</h4>
@@ -37,7 +37,7 @@ class LandingPage extends Component {
                                     <h4>5:00 pm</h4>
                                 </div>
                             </div>
-                            <div className="col-xs-6 hero-schedule">
+                            <div className="col-xs-12 col-md-6">
                                 <h2>Wednesdays</h2>
                                 <div className="col-xs-6">
                                     <h4>Coffee & Fellowship</h4>
@@ -63,11 +63,11 @@ class LandingPage extends Component {
                 </div>
                 <div className="row">
                     <div className="announcements">
-                        <div className="announcement1 col-xs-6">
+                        <div className="announcement1 col-xs-12 col-md-6">
                             <h1>Wednesday Night Meals</h1>
                             <h2>We will not have regular Wednesday night meals in December.</h2>
                         </div>
-                        <div className="announcement2 col-xs-6">
+                        <div className="announcement2 col-xs-12 col-md-6">
                             <h1>Christmas Eve</h1>
                             <h2>NO Sunday School</h2>
                             <h2>Morning: 10:30 AM</h2>
